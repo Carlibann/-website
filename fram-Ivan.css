@@ -1,0 +1,298 @@
+/* FRAMEWOK @IVAN */
+@import url('https://fonts.googleapis.com/css2? family=Titillium+Web&display=swap');
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}hr{box-sizing:content-box;color:inherit;height:0;overflow:visible}main{display:block}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}table{border-color:inherit;text-indent:0}button,input,select{margin:0}button{overflow:visible;text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}fieldset{padding:.35em .75em .625em}input{overflow:visible}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}select{text-transform:none}textarea{margin:0;overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}details{display:block}dialog{background-color:#fff;border:solid;color:#000;display:block;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;left:0;margin:auto;padding:1em;position:absolute;right:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content}dialog:not([open]){display:none}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/*============================
+         CONFIGURACION
+============================== */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/*============================
+         VARIABLE
+============================== */
+
+:root{
+    --fuente:'Titillium Web', sans-serif;
+    --fondo: #f2f2f2;
+    --ancho-contenedor:1200px;
+}
+
+/*============================
+         ESTILO GENERAL
+============================== */
+body{
+    background: var(--fondo);
+    font-family: var(--fuente);
+    font-size: 12px;
+}
+
+p{
+    line-height: 27px;
+}
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+/*============================
+         CONTENEDOR
+============================== */
+.contenedor{
+    max-width: 98%;
+    width: var(--ancho-contenedor);
+    margin: 20px auto;
+    overflow: hidden;
+}
+.contenedor-ancho{
+    width: 100%;
+    padding: 0 40px;
+    margin: 20px auto;
+    /* overflow: hidden; */
+}
+.contenedor-md{
+    width: 50%;
+    padding: 0 20px;
+    margin: 20px auto;
+    
+    
+    /* overflow: hidden; */
+}
+.contenedor-peq{
+    width: 50%;
+    padding: 0 20px;
+    margin: 20px auto;
+    
+    
+    /* overflow: hidden; */
+}
+
+/*============================
+         GRID
+============================== */
+.grid{
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.col-1{grid-template-columns: repeat(1,1fr);}
+.col-2{grid-template-columns: repeat(2,1fr);}
+.col-3{grid-template-columns: repeat(3,1fr);}
+.col-4{grid-template-columns: repeat(4,1fr);}
+.col-5{grid-template-columns: repeat(5,1fr);}
+.col-6{grid-template-columns: repeat(6,1fr);}
+.col-7{grid-template-columns: repeat(7,1fr);}
+.col-8{grid-template-columns: repeat(8,1fr);}
+.col-9{grid-template-columns: repeat(9,1fr);}
+.col-10{grid-template-columns: repeat(10,1fr);}
+.col-11{grid-template-columns: repeat(11,1fr);}
+.col-12{grid-template-columns: repeat(12,1fr);}
+
+.span-1{grid-column: span 1;}
+.span-2{grid-column: span 2;}
+.span-3{grid-column: span 3;}
+.span-4{grid-column: span 4;}
+.span-5{grid-column: span 5;}
+.span-6{grid-column: span 6;}
+.span-7{grid-column: span 7;}
+.span-8{grid-column: span 8;}
+.span-9{grid-column: span 9;}
+.span-10{grid-column: span 10;}
+.span-11{grid-column: span 11;}
+.span-12{grid-column: span 12;}
+.span-13{grid-column: span 13;}
+
+
+/*============================
+         COMPONENTES
+============================== */
+.card{
+    padding: 40px;
+    background: #fff;
+    border-radius:3px;
+    box-shadow:  0px 0px 30px rgba(221,221,211,0.3);
+
+}
+/*============================
+         FUENTES
+============================== */
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+
+.display-1{
+    font-weight: 700;
+    font-size: 64px;
+}
+.display-2{
+    font-weight: 700;
+    font-size: 54px;
+}
+.display-3{
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.texto-centrar{text-align: center;}
+.texto-izquierda{text-align: left;}
+.texto-derecha{text-align: right;}
+.texo-justificado{text-align: justify;}
+
+.no-margen{margin: 0;}
+.no-margen-superior{margin-top: 0;}
+.no-margen-inferior{margin-bottom: 0;}
+.no-margen-izquierdo{margin-left: 0;}
+.no-margen-derecho{margin-right: 0;}
+
+.margen-superior{margin: 20px;}
+.margen-inferior{margin-bottom: 20px;}
+
+/*============================
+         Formulario
+============================== */
+form *{
+    font-family: var(--fuente);
+}
+
+form .input{
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+form .input:focus{
+    border: 1px solid #641ee7;
+    outline: none;
+}
+
+.boton{
+    background: #641ee7;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    transition: .3s ease all;
+}
+.boton-derecha{
+    padding: 10px 15px; margin-left:85%;}
+.boton-izquierda{float: right; padding: 10px 15px;}
+
+
+/*============================
+         MEDIA QUERIES
+============================== */
+/* TABLES */
+@media screen and (max-width:992px){
+    .inter-col-1{grid-template-columns: repeat(1,1fr);}
+    .inter-col-2{grid-template-columns: repeat(2,1fr);}
+    .inter-col-3{grid-template-columns: repeat(3,1fr);}
+    .inter-col-4{grid-template-columns: repeat(4,1fr);}
+    .inter-col-5{grid-template-columns: repeat(5,1fr);}
+    .inter-col-6{grid-template-columns: repeat(6,1fr);}
+    .inter-col-7{grid-template-columns: repeat(7,1fr);}
+    .inter-col-8{grid-template-columns: repeat(8,1fr);}
+    .inter-col-9{grid-template-columns: repeat(9,1fr);}
+    .inter-col-10{grid-template-columns: repeat(10,1fr);}
+    .inter-col-11{grid-template-columns: repeat(11,1fr);}
+    .inter-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .inter-span-1{grid-column: span 1;}
+    .inter-span-2{grid-column: span 2;}
+    .inter-span-3{grid-column: span 3;}
+    .inter-span-4{grid-column: span 4;}
+    .inter-span-5{grid-column: span 5;}
+    .inter-span-6{grid-column: span 6;}
+    .inter-span-7{grid-column: span 7;}
+    .inter-span-8{grid-column: span 8;}
+    .inter-span-9{grid-column: span 9;}
+    .inter-span-10{grid-column: span 10;}
+    .inter-span-11{grid-column: span 11;}
+    .inter-span-12{grid-column: span 12;}
+    .inter-span-13{grid-column: span 13;}
+
+    .inter-boton-derecha{padding: 10px 15px; margin-left:75%;}
+
+    
+}
+/* CELULARES */
+@media screen and (max-width:778px){
+    .med-col-1{grid-template-columns: repeat(1,1fr);}
+    .med-col-2{grid-template-columns: repeat(2,1fr);}
+    .med-col-3{grid-template-columns: repeat(3,1fr);}
+    .med-col-4{grid-template-columns: repeat(4,1fr);}
+    .med-col-5{grid-template-columns: repeat(5,1fr);}
+    .med-col-6{grid-template-columns: repeat(6,1fr);}
+    .med-col-7{grid-template-columns: repeat(7,1fr);}
+    .med-col-8{grid-template-columns: repeat(8,1fr);}
+    .med-col-9{grid-template-columns: repeat(9,1fr);}
+    .med-col-10{grid-template-columns: repeat(10,1fr);}
+    .med-col-11{grid-template-columns: repeat(11,1fr);}
+    .med-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .med-span-1{grid-column: span 1;}
+    .med-span-2{grid-column: span 2;}
+    .med-span-3{grid-column: span 3;}
+    .med-span-4{grid-column: span 4;}
+    .med-span-5{grid-column: span 5;}
+    .med-span-6{grid-column: span 6;}
+    .med-span-7{grid-column: span 7;}
+    .med-span-8{grid-column: span 8;}
+    .med-span-9{grid-column: span 9;}
+    .med-span-10{grid-column: span 10;}
+    .med-span-11{grid-column: span 11;}
+    .med-span-12{grid-column: span 12;}
+    .med-span-13{grid-column: span 13;}
+
+    .med-boton-derecha{padding: 10px 15px; margin-left:70%;}
+}
+
+
+/* CELULAR */
+@media screen and (max-width:576px){
+    .peq-col-1{grid-template-columns: repeat(1,1fr);}
+    .peq-col-2{grid-template-columns: repeat(2,1fr);}
+    .peq-col-3{grid-template-columns: repeat(3,1fr);}
+    .peq-col-4{grid-template-columns: repeat(4,1fr);}
+    .peq-col-5{grid-template-columns: repeat(5,1fr);}
+    .peq-col-6{grid-template-columns: repeat(6,1fr);}
+    .peq-col-7{grid-template-columns: repeat(7,1fr);}
+    .peq-col-8{grid-template-columns: repeat(8,1fr);}
+    .peq-col-9{grid-template-columns: repeat(9,1fr);}
+    .peq-col-10{grid-template-columns: repeat(10,1fr);}
+    .peq-col-11{grid-template-columns: repeat(11,1fr);}
+    .peq-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .peq-boton-derecha{padding: 5px 10px; margin: 0px auto;}
+    
+}
+/* CELULAR */
+@media screen and (max-width: 320px){
+    .peq-col-1{grid-template-columns: repeat(1,1fr);}
+    .peq-col-2{grid-template-columns: repeat(2,1fr);}
+    .peq-col-3{grid-template-columns: repeat(3,1fr);}
+    .peq-col-4{grid-template-columns: repeat(4,1fr);}
+    .peq-col-5{grid-template-columns: repeat(5,1fr);}
+    .peq-col-6{grid-template-columns: repeat(6,1fr);}
+    .peq-col-7{grid-template-columns: repeat(7,1fr);}
+    .peq-col-8{grid-template-columns: repeat(8,1fr);}
+    .peq-col-9{grid-template-columns: repeat(9,1fr);}
+    .peq-col-10{grid-template-columns: repeat(10,1fr);}
+    .peq-col-11{grid-template-columns: repeat(11,1fr);}
+    .peq-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .peq-boton-derecha{padding: 2px 4px; margin-left:40%; font-size: 8px;}
+    
+}
+
+
+
